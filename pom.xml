@@ -40,7 +40,6 @@
 		<testServerHttpPort>9080</testServerHttpPort>
 		<testServerHttpsPort>9443</testServerHttpsPort>
 		<warContext>basicauth</warContext>
-		<package.file>${project.build.directory}/${project.artifactId}.zip</package.file>
 		<packaging.type>usr</packaging.type>
 	</properties>
 
@@ -49,7 +48,6 @@
 		<profile>
 			<id>runnable</id>
 			<properties>
-				<package.file>${project.build.directory}/${project.artifactId}.jar</package.file>
 				<packaging.type>runnable</packaging.type>
 			</properties>
 		</profile>
@@ -119,7 +117,6 @@
 						<type>zip</type>
 					</assemblyArtifact>
 					<configFile>src/main/liberty/config/server.xml</configFile>
-					<packageFile>${package.file}</packageFile>
 					<include>${packaging.type}</include>
 					<bootstrapProperties>
 					    <appContext>${warContext}</appContext>
