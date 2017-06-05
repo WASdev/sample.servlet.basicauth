@@ -20,7 +20,7 @@ import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.junit.Test;
 
-public class TestApplication extends EndpointTest {
+public class ApplicationIT extends EndpointHelper {
 
     @Test
     public void testDeployment() throws ClientProtocolException, IOException {

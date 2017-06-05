@@ -15,14 +15,14 @@
  *******************************************************************************/ 
 package it.servlet;
 
-import it.EndpointTest;
+import it.EndpointHelper;
 
 import java.io.IOException;
 
 import org.apache.http.client.ClientProtocolException;
 import org.junit.Test;
 
-public class LibertyServletTest extends EndpointTest {
+public class LibertyServletIT extends EndpointHelper {
 
     @Test
     public void testDeployment() throws ClientProtocolException, IOException {
